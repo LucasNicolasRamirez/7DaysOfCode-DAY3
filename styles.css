@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    font-family: "DM Sans", system-ui;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    transition: 0.5s ease;
+}
+.titulo{
+    width: 100;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow-animation 10s linear infinite;
+    background-size: 300% 200%;
+}
+@keyframes rainbow-animation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+.div2{
+    width: 100;
+}
+.descripcion-react,
+.descripcion-vue,
+.descripcion-c,
+.descripcion-java{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(33, 33, 33);
+    border-radius: 40px;
+    margin:auto;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.2rem;
+    align-content: center;
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+strong{
+    color: orange;
+}
+.pregunta,
+.pregunta2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color:orange;
+}
+.botonesFB,
+.botonesRV,
+.botonesCJ{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: center;
+}
+.botones-espec{
+    width: 100%;
+    font-size: 1.2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.boton-front,
+.boton-back,
+.boton-react,
+.boton-vue,
+.boton-c,
+.boton-java,
+.boton-si,
+.boton-no,
+.continuar{
+    border-radius: 50px;
+    border: none;
+    font-size: 2rem;
+    padding: 3%;
+    text-align: center;
+}
+.boton1,
+.boton2{
+    padding: 10%;
+    border-radius: 50px;
+    border: none;
+    font-size: 2rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.boton-front:active,
+.boton-back:active,
+.boton-react:active,
+.boton-vue:active,
+.boton-c:active,
+.boton-java:active,
+.boton1:active,
+.boton2:active,
+.boton11:active,
+.boton22:active,
+.boton-si:active,
+.boton-no:active,
+.enviar:active,
+.continuar:active{
+    outline: none;
+    text-decoration: none;
+    background-color:gray;
+}
+.boton-front:hover,
+.boton-back:hover,
+.boton-react:hover,
+.boton-vue:hover,
+.boton-c:hover,
+.boton-java:hover,
+.boton1:hover,
+.boton2:hover,
+.boton11:hover,
+.boton22:hover,
+.boton-si:hover,
+.boton-no:hover,
+.enviar:hover,
+.continuar:hover{
+    transition: 0.2s ease;
+    outline: none;
+    text-decoration: none;
+    color: orange;
+}
+.links{
+    text-decoration: none;
+    color: red;
+}
+.links:hover{
+    color:orange;
+}
+.escribir{
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    padding: 1%;
+    flex: 1;
+}
+.tecno{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.enviar{
+    border-radius: 15px;
+    border: none;
+}
+.mensaje1,
+.mensaje2,
+.mensaje3,
+.mensaje4{
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+footer {
+    width: 100%;
+    min-height: 56px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    font-size: 16px;
+    font-family: var(--fuente-inter);
+    gap: 5px;
+    margin-top: 13%;
+}
+.usuario{
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: bold;
+}
+.links{
+    width: 30px;
+    filter: invert(100%) grayscale(100%);
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 1200px) {
+    *{
+        justify-content: center;
+        justify-items: center;
+    }
+    .titulo{
+    font-size: 2rem;
+    text-align: center;
+    }
+    .descripcion-react,
+    .descripcion-vue,
+    .descripcion-c,
+    .descripcion-java{
+    width: 80%;
+    border-radius: 40px;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.5rem;
+    }
+    .mensaje1,
+    .mensaje2,
+    .mensaje3,
+    .mensaje4{
+        width: 100%;
+        justify-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        align-items: center;
+    }
+	.boton-front,
+    .boton-back,
+    .boton-react,
+    .boton-vue,
+    .boton-c,
+    .boton-java,
+    .boton-si,
+    .boton-no,
+    .continuar{
+        width: 40%;
+        margin-top: 5%;
+    }
+    .boton1,
+    .boton2{
+        padding: 5%;
+        border-radius: 50px;
+        border: none;
+    }
+    .enviar{
+        width: 30%;
+        font-size: 2rem;
+    }
+    .escribir{
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        border-radius: 15px;
+        padding: 1%;
+        flex: 1;
+        width: 50%;
+    }
+    .tecno{
+        width: 70%;
+        justify-items: center;
+        margin: auto;
+        font-size: 2rem;
+    }
+    .continuar{
+        margin: auto;
+    }
+    .respuesta-escrita{
+        justify-items: center;
+        align-items: center;
+    }
+    .botonesFB,
+    .botonesRV,
+    .botonesCJ{
+        gap: 5%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .titulo{
+        font-size: 30.4px;
+        text-align: center;
+        }
+}

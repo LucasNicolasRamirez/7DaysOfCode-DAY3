@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7DaysOfCode</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- TITULO -->
+    <div1 class="titulo" id="titulo" >
+        <h1 class="rainbow-text">¡Bienvenido a tu Carrera de Programador!</h1>
+    </div1>
+
+    <div2 class="div2" id="div2">
+       
+        <div id="step1">
+            <p class="pregunta" id="pregunta">¿Qué Camino Tomarás?</p>
+            <div class="botonesFB">
+                <button class="boton-front" id="boton-front">Front-End Developer <img src="./assets/frontend.png" alt=""></button>
+                <button class="boton-back" id="boton-back">Back-End Developer <img src="./assets/backend.png" alt=""></button>
+            </div>
+        </div>
+
+        <div id="step2" class="hidden">
+            <p class="pregunta2" id="pregunta2">¡Buena elección! ¿Qué framework deseas aprender?</p>
+            <!-- BOTONES REACT-VUE -->
+            <div class="botonesRV">
+                <button class="boton-react" id="btn-react">React <img src="./assets/react.png" alt=""></button>
+                <button class="boton-vue" id="btn-vue">Vue <img src="./assets/vue.png" alt=""></button>
+            </div>
+            <!-- BOTONES C#-JAVA -->
+            <div class="botonesCJ">
+                <button class="boton-c" id="btn-c">C# <img src="./assets/csharp.png" alt=""></button>
+                <button class="boton-java" id="btn-java">Java <img src="./assets/java.png" alt=""></button>
+            </div>
+        </div>
+
+        <!-- DESCRIPCIONES DE FRAMEWORKS -->
+            <!-- REACT -->
+        <div id="descripcion-react" class="hidden , descripcion-react">
+            <p id="react-description">
+                Desarrollado por:<strong>Facebook (Meta)</strong> <br>
+                <strong>React</strong> es una biblioteca de JavaScript que permite construir 
+                interfaces de usuario, especialmente para <strong>aplicaciones web</strong> de
+                una sola página (SPA). Es conocido por su enfoque en componentes, 
+                lo que permite a los desarrolladores dividir la <strong>UI</strong> en piezas 
+                reutilizables.<br>
+                Si deseas aquí tienes más información sobre
+                <a class="links" href="https://developer.mozilla.org/es/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started" target="_blank">
+                React</a>  
+            </p>
+            <p class="especialidad" id="especialidad">
+                Presiona 1 para seguir especializándote en <strong>React</strong> o 2 
+                para desarrollarte y convertirte en <strong>Fullstack</strong>.
+                <div class="botones-espec">
+                    <button class="boton1" id="boton1"> 1</button>
+                    <button class="boton2" id="boton2"> 2 </button>
+
+                    <p id="mensaje1" class="mensaje1 , hidden">¡Muy bien!, ¡Sigue especializándote en <strong>React</strong> 
+                        para dominar el área de <strong>Front-End!</strong>!</p>
+
+
+                    <p id="mensaje2" class="mensaje2 , hidden">¡Es hora de comenzar a aprender otros lenguajes además de 
+                        <strong>React</strong> si quieres convertirte en <strong>Fullstack</strong>!</p>
+                      
+                </div>
+                <p class="mensaje3 , hidden" id="mensaje3">¿Hay alguna otra tecnología que te gustaría aprender?
+                        <button class="boton-si" id="boton-si">SI</button>
+                        <button class="boton-no" id="boton-no">NO</button>
+                </p>
+                <p class="mensaje4 , hidden" id="mensaje4">¿Qué otra tecnología te gustaria investigar y aprender?</p>
+                <div class="tecno , hidden" id="tecno">
+                    <input type="text" class="escribir , hidden" id="escribir" placeholder="Escribela aquí...">
+                        <button class="enviar" id="enviar" onclick="showGreeting()">Enviar</button>
+                </div>
+                <p class="hidden" id="respuesta-escrita"></p>
+                <button class="continuar , hidden" id="continuar">Continuar</button>
+            </p>
+        </div>
+
+            <!-- VUE -->
+        <div id="descripcion-vue" class="hidden , descripcion-vue">
+            <p id="vue-description">
+            Desarrollado por:<strong>Evan You</strong><br>
+                <strong>Vue</strong> es un <strong>framework progresivo</strong> de JavaScript que se utiliza para 
+                crear <strong>interfaces de usuario</strong> y <strong>aplicaciones web</strong> de una sola página. 
+                Es conocido por su facilidad de <strong>integración y simplicidad</strong>, lo que lo 
+                hace ideal tanto para proyectos pequeños como grandes.<br>
+                Si deseas aquí tienes más información sobre
+                <a class="links" href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_getting_started" target="_blank">
+                Vue</a>
+            </p>
+            <p class="especialidad" id="especialidadVue">
+                Presiona 1 para seguir especializándote en <strong>Vue</strong> o 2 
+                para desarrollarte y convertirte en <strong>Fullstack</strong>.</p>
+                <div class="botones-espec">
+                    <button class="boton1" id="boton1Vue"> 1</button>
+                    <button class="boton2" id="boton2Vue"> 2 </button>
+                    
+                     <p id="mensaje1Vue" class="mensaje1 , hidden">¡Muy bien!, ¡Sigue especializándote en <strong>Vue</strong> 
+                        para dominar el área de <strong>Front-End!</strong>!</p>
+
+                    <p id="mensaje2Vue" class="mensaje2 , hidden">¡Es hora de comenzar a aprender otros lenguajes además de 
+                        <strong>Vue</strong> si quieres convertirte en <strong>Fullstack</strong>!</p>   
+                </div>
+                <p class="mensaje3" id="mensaje3Vue">¿Hay alguna otra tecnología que te gustaría aprender?
+                        <button class="boton-si" id="boton-siVue">SI</button>
+                        <button class="boton-no" id="boton-noVue">NO</button>
+                </p>
+                <p class="mensaje4" id="mensaje4Vue">¿Qué otra tecnología te gustaria investigar y aprender?</p>
+                <div class="tecno" id="tecnoVue">
+                    <input type="text" class="escribir" id="escribirVue" placeholder="Escribela aquí...">
+                        <button class="enviar" id="enviarVue" onclick="showGreeting2()">Enviar</button>
+                </div>
+                <p id="respuesta-escritaVue"></p>
+                <button class="continuar" id="continuarVue">Continuar</button>
+            </p>
+        </div>
+            <!-- C# -->
+        <div id="descripcion-c" class="hidden , descripcion-c">
+            <p id="c-description">
+            Desarrollado por:<strong>Microsoft.</strong><br><strong>C#</strong>(pronunciado "C-Sharp") es un lenguaje de 
+            programación orientado a <strong>objetos y parte de la plataforma .NET de Microsoft</strong>. Fue diseñado 
+            para ser <strong>sencillo</strong>, <strong>moderno</strong> y<strong>seguro</strong> , con una sintaxis que recuerda a otros lenguajes como <strong> C++</strong>
+            y<strong>Java</strong>. C# es utilizado principalmente para desarrollar <strong>aplicaciones de escritorio</strong>, juegos 
+            (con Unity), aplicaciones móviles (con Xamarin), y aplicaciones web (con ASP.NET).<br>
+                Si deseas aquí tienes más información sobre
+                <a class="links" href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_getting_started" target="_blank">
+                C#</a>
+            </p>
+            <p class="especialidad" id="especialidadC">
+                Presiona 1 para seguir especializándote en <strong>C#</strong> o 2 
+                para desarrollarte y convertirte en <strong>Fullstack</strong>.</p>
+                <div class="botones-espec">
+                    <button class="boton1" id="boton1C"> 1</button>
+                    <button class="boton2" id="boton2C"> 2 </button>
+                    
+                    <p id="mensaje1C" class="mensaje1 , hidden">¡Muy bien!, ¡Sigue especializándote en <strong>C#</strong> 
+                        para dominar el área de <strong>Back-End!</strong>!</p>
+
+                    <p id="mensaje2C" class="mensaje2 , hidden">¡Es hora de comenzar a aprender otros lenguajes además de 
+                        <strong>C#</strong> si quieres convertirte en <strong>Fullstack</strong>!</p>   
+                </div>
+                <p class="mensaje3" id="mensaje3C">¿Hay alguna otra tecnología que te gustaría aprender?
+                        <button class="boton-si" id="boton-siC">SI</button>
+                        <button class="boton-no" id="boton-noC">NO</button>
+                </p>
+                <p class="mensaje4" id="mensaje4C">¿Qué otra tecnología te gustaria investigar y aprender?</p>
+                <div class="tecno" id="tecnoC">
+                    <input type="text" class="escribir" id="escribirC" placeholder="Escribela aquí...">
+                        <button class="enviar" id="enviarC" onclick="showGreeting3()">Enviar</button>
+                </div>
+                <p id="respuesta-escritaC"></p>
+                <button class="continuar" id="continuarC">Continuar</button>
+            </p>
+        </div>
+                 <!-- JAVA -->
+        <div id="descripcion-java" class="hidden , descripcion-java">
+            <p id="java-description">
+            Desarrollado por:<strong>Sun Microsystems</strong>(ahora propiedad de Oracle).<br><strong>Java</strong> es un lenguaje de programación 
+            orientado a <strong>objetos</strong>, diseñado para ser independiente de la plataforma, lo que 
+            significa que los programas escritos en Java pueden <strong>ejecutarse</strong> en <strong>cualquier sistema operativo</strong> que tenga la Máquina 
+            Virtual de Java (JVM). Java es <strong>utilizado</strong> principalmente para el <strong>desarrollo de aplicaciones empresariales</strong>, aplicaciones 
+            móviles (particularmente Android), sistemas embebidos, y aplicaciones web.<br>
+                Si deseas aquí tienes más información sobre
+                <a class="links" href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_getting_started" target="_blank">
+                Java</a>
+            </p>
+            <p class="especialidad" id="especialidadJava">
+                Presiona 1 para seguir especializándote en <strong>Java</strong> o 2 
+                para desarrollarte y convertirte en <strong>Fullstack</strong>.</p>
+                <div class="botones-espec">
+                    <button class="boton1" id="boton1Java"> 1</button>
+                    <button class="boton2" id="boton2Java"> 2 </button>
+                    
+                    <p id="mensaje1Java" class="mensaje1 , hidden">¡Muy bien!, ¡Sigue especializándote en <strong>Java</strong> 
+                        para dominar el área de <strong>Back-End!</strong>!</p>
+
+                    <p id="mensaje2Java" class="mensaje2 , hidden">¡Es hora de comenzar a aprender otros lenguajes además de 
+                        <strong>Java</strong> si quieres convertirte en <strong>Fullstack</strong>!</p>   
+                </div>
+                <p class="mensaje3" id="mensaje3Java">¿Hay alguna otra tecnología que te gustaría aprender?
+                        <button class="boton-si" id="boton-siJava">SI</button>
+                        <button class="boton-no" id="boton-noJava">NO</button>
+                </p>
+                <p class="mensaje4" id="mensaje4Java">¿Qué otra tecnología te gustaria investigar y aprender?</p>
+                <div class="tecno" id="tecnoJava">
+                    <input type="text" class="escribir" id="escribirJava" placeholder="Escribela aquí...">
+                        <button class="enviar" id="enviarJava" onclick="showGreeting4()">Enviar</button>
+                </div>
+                <p id="respuesta-escritaJava"></p>
+                <button class="continuar" id="continuarJava">Continuar</button>
+            </p>
+        </div>
+    </div2>
+    <footer class="footer">
+
+        <p class="creador">● Creado por 
+            <a target="_blank" class="usuario">
+                LRamirez.DI 
+            </a>
+         - 2024 ●   
+        </p>
+        <div>
+            <a href="https://github.com/LucasNicolasRamirez" target="_blank">
+                <img class="links" src="./assets/github.png" />
+            </a>
+            <a href="https://www.linkedin.com/in/lucasnicolásramírez/" target="_blank">
+                <img class="links" src="./assets/linkedin.png" />
+            </a>
+            <a href="https://www.instagram.com/lramirez.di/" target="_blank">
+                <img class="links" src="./assets/instagram.png" />
+            </a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
